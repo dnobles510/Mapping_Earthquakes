@@ -195,11 +195,11 @@ function getRadius(magnitude) {
                 "#ea2c2c"
             ];
             // Looping through our intervals to generate a label with a colored square for each interval.
-            for (var i = 0; i < magnitudes.length; i++) {
+            for (var i = 0; i < magnitude.length; i++) {
                 console.log(colors[i]);
                 div.innerHTML +=
                     "<i style='background: " + colors[i] + "'></i> " +
-                    magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+                    magnitude[i] + (magnitude[i + 1] ? "&ndash;" + magnitude[i + 1] + "<br>" : "+");
             }
                 return div;
             };
